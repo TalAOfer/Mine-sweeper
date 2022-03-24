@@ -1,6 +1,7 @@
 body {
     background-color: rgb(61, 64, 65);
-    background-image: url(img/background.jpg);
+    background-image: url('../img/background.jpg');
+    
 }
 
 .game {
@@ -8,7 +9,7 @@ body {
     width: 600px;
     /* border: black 2px solid; */
     /* background-color: aliceblue;
-    background-image: url(img/grey.webp); */
+    background-image: url(/img/grey.webp); */
     background-repeat: no-repeat;
     background-size: 610px 610px;
     text-align: center;
@@ -65,7 +66,7 @@ p {
 
 @font-face {
     font-family: 'digital-7';
-    src: url('fonts/digital-7.ttf');
+    src: url('../fonts/digital-7.ttf');
 }
 
 .stopwatch {
