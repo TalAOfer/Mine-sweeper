@@ -138,7 +138,7 @@ function cellClicked(elCell, i, j) {
             elCell.classList.toggle(`flagged`)
             elCell.innerText = MINE
         }
-        var audio = new Audio('/sounds/mine.mp3');
+        var audio = new Audio('sounds/mine.mp3');
             audio.play();
         elCell.classList.toggle(`mine`)
         elCell.classList.toggle(`hidden`)
@@ -198,7 +198,7 @@ function checkGameOver() {
     console.log()
     if (gIsGameOver) {
         elButton.innerText = '🤯'
-        var audio = new Audio('/sounds/dead.mp3');
+        var audio = new Audio('sounds/dead.mp3');
         audio.play();
         stopClock()
         gIsGameOn = false
@@ -206,7 +206,7 @@ function checkGameOver() {
         if (checkBoard(gBoard)) {
             stopClock()
             elButton.innerText = '😎'
-            var audio = new Audio('/sounds/win.wav');
+            var audio = new Audio('sounds/win.wav');
             audio.play();
             gIsGameOn = false
         }
